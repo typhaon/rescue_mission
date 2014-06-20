@@ -1,0 +1,10 @@
+<h3>Questions</h3>
+
+<ul>
+  <% @questions.each do |question| %>
+    <li>
+      Title: <%= link_to question.title, question_path(question) %>;
+      <%= "Description: #{question.description}" %>
+    </li>
+  <% end %>
+</ul>
